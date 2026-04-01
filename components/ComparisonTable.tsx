@@ -55,7 +55,7 @@ export const ComparisonTable: React.FC<ComparisonTableProps> = ({ products }) =>
                         <td className="p-4 font-medium text-muted-foreground bg-primary/5">Price</td>
                         {products.map((product) => (
                             <td key={product.id} className="p-4 font-bold text-foreground text-lg">
-                                {product.currency} {product.price.toFixed(2)} / {product.unit}
+                                {product.currency === 'INR' ? '₹' : product.currency + ' '}{product.price.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })} / {product.unit}
                             </td>
                         ))}
                     </tr>
@@ -63,7 +63,7 @@ export const ComparisonTable: React.FC<ComparisonTableProps> = ({ products }) =>
                         <td className="p-4 font-medium text-muted-foreground bg-primary/5">Unit Price (Norm.)</td>
                         {products.map((product) => (
                             <td key={product.id} className="p-4 text-muted-foreground italic">
-                                {product.currency} {getPricePerBaseUnit(product).toFixed(4)} / unit
+                                {product.currency === 'INR' ? '₹' : product.currency + ' '}{getPricePerBaseUnit(product).toLocaleString(undefined, { minimumFractionDigits: 4, maximumFractionDigits: 4 })} / unit
                             </td>
                         ))}
                     </tr>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Search, FlaskConical, BarChart3, ShoppingCart, ShieldCheck } from 'lucide-react';
+import { Search, FlaskConical, BarChart3, ShoppingCart, ShieldCheck, Globe, ArrowRight } from 'lucide-react';
 import Link from 'next/link';
 
 export default function LandingPage() {
@@ -67,6 +67,17 @@ export default function LandingPage() {
             <span className="flex items-center gap-1.5"><ShieldCheck size={16} className="text-primary" /> Verified Suppliers</span>
             <span className="flex items-center gap-1.5"><BarChart3 size={16} className="text-primary" /> Side-by-Side Comparison</span>
             <span className="flex items-center gap-1.5"><ShoppingCart size={16} className="text-primary" /> Instant Checkout</span>
+          </div>
+
+          <div className="mt-12">
+            <Link 
+              href="/compare/crawl" 
+              className="inline-flex items-center gap-3 px-8 py-4 bg-neutral-900 border border-white/10 rounded-2xl text-white font-bold hover:bg-neutral-800 hover:border-primary/50 transition-all group"
+            >
+              <Globe size={20} className="text-primary group-hover:rotate-12 transition-transform" />
+              Compare via External URL
+              <ArrowRight size={18} className="text-muted-foreground group-hover:translate-x-1 transition-transform" />
+            </Link>
           </div>
         </div>
 

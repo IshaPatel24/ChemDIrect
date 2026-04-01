@@ -2,7 +2,6 @@
 
 import React, { useState } from 'react';
 import { useSearchParams } from 'next/navigation';
-import { Product } from '@/lib/types';
 import { filterTransactionalResults, cn } from '@/lib/utils';
 import { Search, FlaskConical, ShoppingCart, ArrowRightLeft, Filter, CheckCircle2 } from 'lucide-react';
 import Link from 'next/link';
