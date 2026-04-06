@@ -1,4 +1,4 @@
-export type Unit = 'g' | 'kg' | 'mg' | 'ml' | 'L';
+export type Unit = 'g' | 'kg' | 'mg' | 'ml' | 'L' | 'piece';
 
 export interface Product {
     id: string;

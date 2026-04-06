@@ -61,7 +61,7 @@ export default function BasicCrawlPage() {
             Basic URL Comparison
           </h1>
           <p className="text-muted-foreground text-lg">
-            Enter two URLs to compare products directly.
+            Enter two URLs to compare products (e.g., Honey, Body Soap) directly.
           </p>
         </div>
 
@@ -75,7 +75,7 @@ export default function BasicCrawlPage() {
                     <Globe className="absolute left-3 top-1/2 -translate-y-1/2 text-muted-foreground" size={16} />
                     <input
                       type="url"
-                      placeholder="https://srlchem.com/..."
+                      placeholder="https://dabur.com/honey..."
                       value={urls.url1}
                       onChange={(e) => setUrls({ ...urls, url1: e.target.value })}
                       className="w-full pl-10 pr-4 py-3 bg-background border border-border rounded-xl focus:ring-2 focus:ring-primary/50 outline-none text-sm text-foreground transition-all"
@@ -89,7 +89,7 @@ export default function BasicCrawlPage() {
                     <Globe className="absolute left-3 top-1/2 -translate-y-1/2 text-muted-foreground" size={16} />
                     <input
                       type="url"
-                      placeholder="https://lobachemie.com/..."
+                      placeholder="https://patanjaliayurved.net/honey..."
                       value={urls.url2}
                       onChange={(e) => setUrls({ ...urls, url2: e.target.value })}
                       className="w-full pl-10 pr-4 py-3 bg-background border border-border rounded-xl focus:ring-2 focus:ring-primary/50 outline-none text-sm text-foreground transition-all"
