@@ -1,6 +1,8 @@
 import React from 'react';
 import { Search, FlaskConical, BarChart3, ShoppingCart, ShieldCheck, Globe, ArrowRight } from 'lucide-react';
 import Link from 'next/link';
+import SearchBar from '@/components/SearchBar';
+
 
 export default function LandingPage() {
   return (
@@ -41,26 +43,8 @@ export default function LandingPage() {
           </p>
 
           {/* Search Interface */}
-          <div className="relative max-w-2xl mx-auto group">
-            <div className="absolute -inset-1 bg-gradient-to-r from-primary to-accent rounded-2xl blur opacity-25 group-focus-within:opacity-50 transition-opacity"></div>
-            <form action="/results" className="relative flex items-center bg-card rounded-2xl shadow-xl border border-border p-2 overflow-hidden">
-              <div className="pl-4 text-muted-foreground">
-                <Search size={24} />
-              </div>
-              <input
-                type="text"
-                name="q"
-                placeholder="Search by Name, CAS Number, or Formula..."
-                className="w-full px-4 py-4 focus:outline-none text-lg text-foreground placeholder:text-muted-foreground bg-transparent"
-                autoComplete="off"
-              />
-              <button
-                type="submit"
-                className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-4 rounded-xl font-bold transition-all transform active:scale-95 shadow-md"
-              >
-                Search
-              </button>
-            </form>
+          <div className="mt-12 mb-8">
+            <SearchBar />
           </div>
 
           <div className="mt-8 flex flex-wrap justify-center gap-6 text-sm text-muted-foreground font-medium">

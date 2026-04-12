@@ -3,6 +3,7 @@ export type Unit = 'g' | 'kg' | 'mg' | 'ml' | 'L' | 'piece';
 export interface Product {
     id: string;
     name: string;
+    category?: string;
     brand?: string;
     cas_number?: string;
     purity?: string;
@@ -13,6 +14,7 @@ export interface Product {
     stock_status: 'in_stock' | 'out_of_stock' | 'preorder';
     vendor_url: string;
     thumbnail_url?: string;
+    image?: string;
 }
 
 export interface SearchResult {

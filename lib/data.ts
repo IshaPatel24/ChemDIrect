@@ -1339,5 +1339,41 @@ export const MOCK_PRODUCTS: Product[] = [
         "stock_status": "preorder",
         "vendor_url": "https://example-vendor.in/product/99",
         "description": "Verified Ammonium Acetate from CDH Fine Chemicals. Tested for 98% (AR) purity. Compliant with international organic synthesis protocols."
+    },
+    {
+        "id": "200",
+        "name": "Organic Lavender Soap, 100g",
+        "category": "Soap",
+        "brand": "Nature's Essence",
+        "price": 150,
+        "currency": "INR",
+        "unit": "piece",
+        "stock_status": "in_stock",
+        "vendor_url": "https://example-vendor.in/product/soap-1",
+        "description": "Handmade organic lavender soap. Soothing and free of harsh chemicals."
+    },
+    {
+        "id": "201",
+        "name": "Activated Charcoal Soap",
+        "category": "Soap",
+        "brand": "Pure Earth",
+        "price": 120,
+        "currency": "INR",
+        "unit": "piece",
+        "stock_status": "in_stock",
+        "vendor_url": "https://example-vendor.in/product/soap-2",
+        "description": "Deep cleansing activated charcoal soap. Helps remove impurities."
+    },
+    {
+        "id": "202",
+        "name": "Neem & Aloe Vera Organic Soap",
+        "category": "Soap",
+        "brand": "Ayurvedic Care",
+        "price": 95,
+        "currency": "INR",
+        "unit": "piece",
+        "stock_status": "in_stock",
+        "vendor_url": "https://example-vendor.in/product/soap-3",
+        "description": "Natural soap combining the antibacterial properties of Neem and the soothing effect of Aloe Vera."
     }
 ];
